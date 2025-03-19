@@ -15,7 +15,7 @@ export default function Login() {
 
 
     if (localStorage.getItem("AUTH_TOKEN_KEY")) {
-      window.location.href = "/users/profile";
+      window.location.href =process.env.PUBLIC_URL  +"/users/profile";
     }
   })
   const handleSubmit = (e) => {
